@@ -1,0 +1,546 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3C48D2F414C379BA00E5358C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C48D2F314C379BA00E5358C /* UIKit.framework */; };
+		3C48D2F614C379BA00E5358C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C48D2F514C379BA00E5358C /* Foundation.framework */; };
+		3C48D2F814C379BA00E5358C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C48D2F714C379BA00E5358C /* CoreGraphics.framework */; };
+		3C48D2FE14C379BA00E5358C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3C48D2FC14C379BA00E5358C /* InfoPlist.strings */; };
+		3C48D30014C379BA00E5358C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C48D2FF14C379BA00E5358C /* main.m */; };
+		3C48D30414C379BA00E5358C /* BetrayalAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C48D30314C379BA00E5358C /* BetrayalAppDelegate.m */; };
+		3C48D30714C379BA00E5358C /* BetrayalMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C48D30614C379BA00E5358C /* BetrayalMainViewController.m */; };
+		3C48D30A14C379BA00E5358C /* BetrayalFlipsideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C48D30914C379BA00E5358C /* BetrayalFlipsideViewController.m */; };
+		3C48D30D14C379BA00E5358C /* BetrayalMainViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C48D30B14C379BA00E5358C /* BetrayalMainViewController_iPhone.xib */; };
+		3C48D31014C379BA00E5358C /* BetrayalMainViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C48D30E14C379BA00E5358C /* BetrayalMainViewController_iPad.xib */; };
+		3C48D31314C379BA00E5358C /* BetrayalFlipsideViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C48D31114C379BA00E5358C /* BetrayalFlipsideViewController.xib */; };
+		3C48D31B14C379BA00E5358C /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C48D31A14C379BA00E5358C /* SenTestingKit.framework */; };
+		3C48D31C14C379BA00E5358C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C48D2F314C379BA00E5358C /* UIKit.framework */; };
+		3C48D31D14C379BA00E5358C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C48D2F514C379BA00E5358C /* Foundation.framework */; };
+		3C48D32514C379BA00E5358C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3C48D32314C379BA00E5358C /* InfoPlist.strings */; };
+		3C48D32814C379BA00E5358C /* iBetrayalTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C48D32714C379BA00E5358C /* iBetrayalTests.m */; };
+		3C48D33214C389DE00E5358C /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C48D33114C389DE00E5358C /* Default.png */; };
+		3C48D33414C389E500E5358C /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C48D33314C389E500E5358C /* Default@2x.png */; };
+		3C48D33614C38A1200E5358C /* Default-Portrait~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C48D33514C38A1200E5358C /* Default-Portrait~ipad.png */; };
+		3C48D33814C38A1600E5358C /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C48D33714C38A1600E5358C /* Default-Landscape~ipad.png */; };
+		3C5B4C1F14C3A6370006624D /* Character.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C5B4C1E14C3A6370006624D /* Character.m */; };
+		3C5B4C2314C3B0E90006624D /* Characters.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3C5B4C2214C3B0E90006624D /* Characters.plist */; };
+		3C5B4C2A14C3B78A0006624D /* UIStatTrackerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C5B4C2914C3B78A0006624D /* UIStatTrackerViewController.m */; };
+		3C5B4C2D14C3B9690006624D /* UIStatSegmentedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C5B4C2C14C3B9690006624D /* UIStatSegmentedView.m */; };
+		3C89EBF414C420CD003CC459 /* BarBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C89EBF114C420CD003CC459 /* BarBackground.png */; };
+		3C89EBF514C420CD003CC459 /* BrandonJaspers.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C89EBF214C420CD003CC459 /* BrandonJaspers.png */; };
+		3C89EBF614C420CD003CC459 /* Skull.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C89EBF314C420CD003CC459 /* Skull.png */; };
+		3C89EBFA14C423A1003CC459 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C89EBF914C423A1003CC459 /* MessageUI.framework */; };
+		3CCC3D8314C42AE700CD122D /* UnknownCharacter.png in Resources */ = {isa = PBXBuildFile; fileRef = 3CCC3D8214C42AE700CD122D /* UnknownCharacter.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3C48D31E14C379BA00E5358C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3C48D2E614C379BA00E5358C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3C48D2EE14C379BA00E5358C;
+			remoteInfo = iBetrayal;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3C48D2EF14C379BA00E5358C /* iBetrayal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iBetrayal.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C48D2F314C379BA00E5358C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3C48D2F514C379BA00E5358C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3C48D2F714C379BA00E5358C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3C48D2FB14C379BA00E5358C /* iBetrayal-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iBetrayal-Info.plist"; sourceTree = "<group>"; };
+		3C48D2FD14C379BA00E5358C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3C48D2FF14C379BA00E5358C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3C48D30114C379BA00E5358C /* iBetrayal-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iBetrayal-Prefix.pch"; sourceTree = "<group>"; };
+		3C48D30214C379BA00E5358C /* BetrayalAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BetrayalAppDelegate.h; sourceTree = "<group>"; };
+		3C48D30314C379BA00E5358C /* BetrayalAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BetrayalAppDelegate.m; sourceTree = "<group>"; };
+		3C48D30514C379BA00E5358C /* BetrayalMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BetrayalMainViewController.h; sourceTree = "<group>"; };
+		3C48D30614C379BA00E5358C /* BetrayalMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BetrayalMainViewController.m; sourceTree = "<group>"; };
+		3C48D30814C379BA00E5358C /* BetrayalFlipsideViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BetrayalFlipsideViewController.h; sourceTree = "<group>"; };
+		3C48D30914C379BA00E5358C /* BetrayalFlipsideViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BetrayalFlipsideViewController.m; sourceTree = "<group>"; };
+		3C48D30C14C379BA00E5358C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/BetrayalMainViewController_iPhone.xib; sourceTree = "<group>"; };
+		3C48D30F14C379BA00E5358C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/BetrayalMainViewController_iPad.xib; sourceTree = "<group>"; };
+		3C48D31214C379BA00E5358C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/BetrayalFlipsideViewController.xib; sourceTree = "<group>"; };
+		3C48D31914C379BA00E5358C /* iBetrayalTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iBetrayalTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C48D31A14C379BA00E5358C /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		3C48D32214C379BA00E5358C /* iBetrayalTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iBetrayalTests-Info.plist"; sourceTree = "<group>"; };
+		3C48D32414C379BA00E5358C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3C48D32614C379BA00E5358C /* iBetrayalTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iBetrayalTests.h; sourceTree = "<group>"; };
+		3C48D32714C379BA00E5358C /* iBetrayalTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iBetrayalTests.m; sourceTree = "<group>"; };
+		3C48D33114C389DE00E5358C /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		3C48D33314C389E500E5358C /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		3C48D33514C38A1200E5358C /* Default-Portrait~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait~ipad.png"; sourceTree = "<group>"; };
+		3C48D33714C38A1600E5358C /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape~ipad.png"; sourceTree = "<group>"; };
+		3C5B4C1D14C3A6370006624D /* Character.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Character.h; sourceTree = "<group>"; };
+		3C5B4C1E14C3A6370006624D /* Character.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Character.m; sourceTree = "<group>"; };
+		3C5B4C2214C3B0E90006624D /* Characters.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Characters.plist; sourceTree = "<group>"; };
+		3C5B4C2714C3B7090006624D /* UIStatView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIStatView.h; sourceTree = "<group>"; };
+		3C5B4C2814C3B78A0006624D /* UIStatTrackerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIStatTrackerViewController.h; sourceTree = "<group>"; };
+		3C5B4C2914C3B78A0006624D /* UIStatTrackerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIStatTrackerViewController.m; sourceTree = "<group>"; };
+		3C5B4C2B14C3B9690006624D /* UIStatSegmentedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIStatSegmentedView.h; sourceTree = "<group>"; };
+		3C5B4C2C14C3B9690006624D /* UIStatSegmentedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIStatSegmentedView.m; sourceTree = "<group>"; };
+		3C89EBF114C420CD003CC459 /* BarBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BarBackground.png; sourceTree = "<group>"; };
+		3C89EBF214C420CD003CC459 /* BrandonJaspers.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BrandonJaspers.png; sourceTree = "<group>"; };
+		3C89EBF314C420CD003CC459 /* Skull.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Skull.png; sourceTree = "<group>"; };
+		3C89EBF814C4220F003CC459 /* Settings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Settings.h; sourceTree = "<group>"; };
+		3C89EBF914C423A1003CC459 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		3CCC3D8214C42AE700CD122D /* UnknownCharacter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UnknownCharacter.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3C48D2EC14C379BA00E5358C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C89EBFA14C423A1003CC459 /* MessageUI.framework in Frameworks */,
+				3C48D2F414C379BA00E5358C /* UIKit.framework in Frameworks */,
+				3C48D2F614C379BA00E5358C /* Foundation.framework in Frameworks */,
+				3C48D2F814C379BA00E5358C /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C48D31514C379BA00E5358C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C48D31B14C379BA00E5358C /* SenTestingKit.framework in Frameworks */,
+				3C48D31C14C379BA00E5358C /* UIKit.framework in Frameworks */,
+				3C48D31D14C379BA00E5358C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3C48D2E414C379BA00E5358C = {
+			isa = PBXGroup;
+			children = (
+				3C89EBF914C423A1003CC459 /* MessageUI.framework */,
+				3C5B4C2114C3B0E90006624D /* assets */,
+				3C48D2F914C379BA00E5358C /* iBetrayal */,
+				3C48D32014C379BA00E5358C /* iBetrayalTests */,
+				3C48D2F214C379BA00E5358C /* Frameworks */,
+				3C48D2F014C379BA00E5358C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3C48D2F014C379BA00E5358C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3C48D2EF14C379BA00E5358C /* iBetrayal.app */,
+				3C48D31914C379BA00E5358C /* iBetrayalTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3C48D2F214C379BA00E5358C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3C48D2F314C379BA00E5358C /* UIKit.framework */,
+				3C48D2F514C379BA00E5358C /* Foundation.framework */,
+				3C48D2F714C379BA00E5358C /* CoreGraphics.framework */,
+				3C48D31A14C379BA00E5358C /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3C48D2F914C379BA00E5358C /* iBetrayal */ = {
+			isa = PBXGroup;
+			children = (
+				3C48D30214C379BA00E5358C /* BetrayalAppDelegate.h */,
+				3C48D30314C379BA00E5358C /* BetrayalAppDelegate.m */,
+				3C48D30514C379BA00E5358C /* BetrayalMainViewController.h */,
+				3C48D30614C379BA00E5358C /* BetrayalMainViewController.m */,
+				3C48D30814C379BA00E5358C /* BetrayalFlipsideViewController.h */,
+				3C48D30914C379BA00E5358C /* BetrayalFlipsideViewController.m */,
+				3C48D30B14C379BA00E5358C /* BetrayalMainViewController_iPhone.xib */,
+				3C48D30E14C379BA00E5358C /* BetrayalMainViewController_iPad.xib */,
+				3C48D31114C379BA00E5358C /* BetrayalFlipsideViewController.xib */,
+				3C48D2FA14C379BA00E5358C /* Supporting Files */,
+				3C5B4C1D14C3A6370006624D /* Character.h */,
+				3C5B4C1E14C3A6370006624D /* Character.m */,
+				3C5B4C2714C3B7090006624D /* UIStatView.h */,
+				3C5B4C2814C3B78A0006624D /* UIStatTrackerViewController.h */,
+				3C5B4C2914C3B78A0006624D /* UIStatTrackerViewController.m */,
+				3C5B4C2B14C3B9690006624D /* UIStatSegmentedView.h */,
+				3C5B4C2C14C3B9690006624D /* UIStatSegmentedView.m */,
+				3C89EBF814C4220F003CC459 /* Settings.h */,
+			);
+			path = iBetrayal;
+			sourceTree = "<group>";
+		};
+		3C48D2FA14C379BA00E5358C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3C48D2FB14C379BA00E5358C /* iBetrayal-Info.plist */,
+				3C48D2FC14C379BA00E5358C /* InfoPlist.strings */,
+				3C48D2FF14C379BA00E5358C /* main.m */,
+				3C48D30114C379BA00E5358C /* iBetrayal-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3C48D32014C379BA00E5358C /* iBetrayalTests */ = {
+			isa = PBXGroup;
+			children = (
+				3C48D32614C379BA00E5358C /* iBetrayalTests.h */,
+				3C48D32714C379BA00E5358C /* iBetrayalTests.m */,
+				3C48D32114C379BA00E5358C /* Supporting Files */,
+			);
+			path = iBetrayalTests;
+			sourceTree = "<group>";
+		};
+		3C48D32114C379BA00E5358C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3C48D32214C379BA00E5358C /* iBetrayalTests-Info.plist */,
+				3C48D32314C379BA00E5358C /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3C5B4C2114C3B0E90006624D /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				3CCC3D8214C42AE700CD122D /* UnknownCharacter.png */,
+				3C89EBF114C420CD003CC459 /* BarBackground.png */,
+				3C89EBF214C420CD003CC459 /* BrandonJaspers.png */,
+				3C89EBF314C420CD003CC459 /* Skull.png */,
+				3C48D33714C38A1600E5358C /* Default-Landscape~ipad.png */,
+				3C48D33514C38A1200E5358C /* Default-Portrait~ipad.png */,
+				3C48D33314C389E500E5358C /* Default@2x.png */,
+				3C48D33114C389DE00E5358C /* Default.png */,
+				3C5B4C2214C3B0E90006624D /* Characters.plist */,
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3C48D2EE14C379BA00E5358C /* iBetrayal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C48D32B14C379BA00E5358C /* Build configuration list for PBXNativeTarget "iBetrayal" */;
+			buildPhases = (
+				3C48D2EB14C379BA00E5358C /* Sources */,
+				3C48D2EC14C379BA00E5358C /* Frameworks */,
+				3C48D2ED14C379BA00E5358C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iBetrayal;
+			productName = iBetrayal;
+			productReference = 3C48D2EF14C379BA00E5358C /* iBetrayal.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3C48D31814C379BA00E5358C /* iBetrayalTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C48D32E14C379BA00E5358C /* Build configuration list for PBXNativeTarget "iBetrayalTests" */;
+			buildPhases = (
+				3C48D31414C379BA00E5358C /* Sources */,
+				3C48D31514C379BA00E5358C /* Frameworks */,
+				3C48D31614C379BA00E5358C /* Resources */,
+				3C48D31714C379BA00E5358C /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3C48D31F14C379BA00E5358C /* PBXTargetDependency */,
+			);
+			name = iBetrayalTests;
+			productName = iBetrayalTests;
+			productReference = 3C48D31914C379BA00E5358C /* iBetrayalTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3C48D2E614C379BA00E5358C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 3C48D2E914C379BA00E5358C /* Build configuration list for PBXProject "iBetrayal" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3C48D2E414C379BA00E5358C;
+			productRefGroup = 3C48D2F014C379BA00E5358C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3C48D2EE14C379BA00E5358C /* iBetrayal */,
+				3C48D31814C379BA00E5358C /* iBetrayalTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3C48D2ED14C379BA00E5358C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C48D2FE14C379BA00E5358C /* InfoPlist.strings in Resources */,
+				3C48D30D14C379BA00E5358C /* BetrayalMainViewController_iPhone.xib in Resources */,
+				3C48D31014C379BA00E5358C /* BetrayalMainViewController_iPad.xib in Resources */,
+				3C48D31314C379BA00E5358C /* BetrayalFlipsideViewController.xib in Resources */,
+				3C48D33214C389DE00E5358C /* Default.png in Resources */,
+				3C48D33414C389E500E5358C /* Default@2x.png in Resources */,
+				3C48D33614C38A1200E5358C /* Default-Portrait~ipad.png in Resources */,
+				3C48D33814C38A1600E5358C /* Default-Landscape~ipad.png in Resources */,
+				3C5B4C2314C3B0E90006624D /* Characters.plist in Resources */,
+				3C89EBF414C420CD003CC459 /* BarBackground.png in Resources */,
+				3C89EBF514C420CD003CC459 /* BrandonJaspers.png in Resources */,
+				3C89EBF614C420CD003CC459 /* Skull.png in Resources */,
+				3CCC3D8314C42AE700CD122D /* UnknownCharacter.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C48D31614C379BA00E5358C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C48D32514C379BA00E5358C /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3C48D31714C379BA00E5358C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3C48D2EB14C379BA00E5358C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C48D30014C379BA00E5358C /* main.m in Sources */,
+				3C48D30414C379BA00E5358C /* BetrayalAppDelegate.m in Sources */,
+				3C48D30714C379BA00E5358C /* BetrayalMainViewController.m in Sources */,
+				3C48D30A14C379BA00E5358C /* BetrayalFlipsideViewController.m in Sources */,
+				3C5B4C1F14C3A6370006624D /* Character.m in Sources */,
+				3C5B4C2A14C3B78A0006624D /* UIStatTrackerViewController.m in Sources */,
+				3C5B4C2D14C3B9690006624D /* UIStatSegmentedView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C48D31414C379BA00E5358C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C48D32814C379BA00E5358C /* iBetrayalTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3C48D31F14C379BA00E5358C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3C48D2EE14C379BA00E5358C /* iBetrayal */;
+			targetProxy = 3C48D31E14C379BA00E5358C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3C48D2FC14C379BA00E5358C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3C48D2FD14C379BA00E5358C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3C48D30B14C379BA00E5358C /* BetrayalMainViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3C48D30C14C379BA00E5358C /* en */,
+			);
+			name = BetrayalMainViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		3C48D30E14C379BA00E5358C /* BetrayalMainViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3C48D30F14C379BA00E5358C /* en */,
+			);
+			name = BetrayalMainViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+		3C48D31114C379BA00E5358C /* BetrayalFlipsideViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3C48D31214C379BA00E5358C /* en */,
+			);
+			name = BetrayalFlipsideViewController.xib;
+			sourceTree = "<group>";
+		};
+		3C48D32314C379BA00E5358C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3C48D32414C379BA00E5358C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3C48D32914C379BA00E5358C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3C48D32A14C379BA00E5358C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3C48D32C14C379BA00E5358C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iBetrayal/iBetrayal-Prefix.pch";
+				INFOPLIST_FILE = "iBetrayal/iBetrayal-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3C48D32D14C379BA00E5358C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iBetrayal/iBetrayal-Prefix.pch";
+				INFOPLIST_FILE = "iBetrayal/iBetrayal-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		3C48D32F14C379BA00E5358C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/iBetrayal.app/iBetrayal";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iBetrayal/iBetrayal-Prefix.pch";
+				INFOPLIST_FILE = "iBetrayalTests/iBetrayalTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		3C48D33014C379BA00E5358C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/iBetrayal.app/iBetrayal";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iBetrayal/iBetrayal-Prefix.pch";
+				INFOPLIST_FILE = "iBetrayalTests/iBetrayalTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3C48D2E914C379BA00E5358C /* Build configuration list for PBXProject "iBetrayal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C48D32914C379BA00E5358C /* Debug */,
+				3C48D32A14C379BA00E5358C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C48D32B14C379BA00E5358C /* Build configuration list for PBXNativeTarget "iBetrayal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C48D32C14C379BA00E5358C /* Debug */,
+				3C48D32D14C379BA00E5358C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C48D32E14C379BA00E5358C /* Build configuration list for PBXNativeTarget "iBetrayalTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C48D32F14C379BA00E5358C /* Debug */,
+				3C48D33014C379BA00E5358C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3C48D2E614C379BA00E5358C /* Project object */;
+}
