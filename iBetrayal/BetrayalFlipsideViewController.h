@@ -22,11 +22,13 @@
 {
     IBOutlet UIPickerView* _characterPicker;
     IBOutlet UILabel* _adorkableLabel;
+    IBOutlet UISwitch* _sleepSwitch;
 }
 
 @property (assign, nonatomic) IBOutlet id <BetrayalFlipsideViewControllerDelegate> delegate;
 
 - (IBAction)done:(id)sender;
 -( NSString* )selectedCharacterName;
+-( IBAction )toggleSleep:( id )sleepSwitch;
 
 @end

@@ -61,6 +61,11 @@
     [super viewWillAppear:animated];
     
     [ self setPickerToCharacterByName:[ [ self.delegate currentCharacter ] name ] ];
+    
+    if ( _sleepSwitch && [ UIApplication sharedApplication ] )
+    {
+        _sleepSwitch.on = [ UIApplication sharedApplication ].idleTimerDisabled;
+    }
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -163,5 +168,18 @@
     NSInteger row = [ _characterPicker selectedRowInComponent:0 ];
     return [ self pickerView:_characterPicker titleForRow:row forComponent:0 ];    
 }
+
+-( IBAction )toggleSleep:( id )control
+{
+    if( [ [ control class ] isSubclassOfClass:[ UISwitch class ] ] )
+    {
+        UISwitch* sleepSwitch = ( UISwitch* )control;
+        if ( [ UIApplication sharedApplication ] )
+        {
+            [ UIApplication sharedApplication ].idleTimerDisabled = [ sleepSwitch isOn ];
+        }
+    }
+}
+
 
 @end
