@@ -78,7 +78,8 @@
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
         [self dismissModalViewControllerAnimated:YES];
     } else {
-        [self.flipsidePopoverController dismissPopoverAnimated:YES];
+        [ [ controller view ] removeFromSuperview ];
+        [ controller release ];
     }
 }
 
@@ -91,22 +92,15 @@
 - (IBAction)showInfo:(id)sender
 {
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
-        BetrayalFlipsideViewController *controller = [[[BetrayalFlipsideViewController alloc] initWithNibName:@"BetrayalFlipsideViewController" bundle:nil] autorelease];
+        BetrayalFlipsideViewController *controller = [ [ [ BetrayalFlipsideViewController alloc] initWithNibName:@"BetrayaliPhoneFlipsideViewController" bundle:nil ] autorelease ];
         controller.delegate = self;
         controller.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
         [self presentModalViewController:controller animated:YES];
     } else {
-        if (!self.flipsidePopoverController) {
-            BetrayalFlipsideViewController *controller = [[[BetrayalFlipsideViewController alloc] initWithNibName:@"BetrayalFlipsideViewController" bundle:nil] autorelease];
-            controller.delegate = self;
-            
-            self.flipsidePopoverController = [[[UIPopoverController alloc] initWithContentViewController:controller] autorelease];
-        }
-        if ([self.flipsidePopoverController isPopoverVisible]) {
-            [self.flipsidePopoverController dismissPopoverAnimated:YES];
-        } else {
-            [self.flipsidePopoverController presentPopoverFromBarButtonItem:sender permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
-        }
+        BetrayalFlipsideViewController *controller = [ [ [ BetrayalFlipsideViewController alloc] initWithNibName:@"BetrayaliPadFlipsideViewController" bundle:nil ] autorelease ];
+        controller.delegate = self;
+        [ controller retain ];
+        [ [ self view ] addSubview:[ controller view ] ];
     }
 }
 

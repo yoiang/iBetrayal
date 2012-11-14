@@ -11,6 +11,8 @@
 @class Character;
 
 @class BetrayalMainViewController;
+@class BetrayaliPadMainViewController;
+@class MFMailComposeViewController;
 
 @interface BetrayalAppDelegate : UIResponder <UIApplicationDelegate>
 {
@@ -19,11 +21,13 @@
 
 @property (strong, nonatomic) UIWindow *window;
 
+@property (strong, nonatomic) BetrayaliPadMainViewController* iPadMainViewController;
 @property (strong, nonatomic) BetrayalMainViewController *mainViewController;
 
 -( int )numberOfCharacters;
 -( Character* )getCharacterAtIndex:( int )index;
 -( Character* )getCharacterByName:( NSString* )name;
-//-( NSMutableArray* )characters;
+
++( MFMailComposeViewController* )createFeedbackController;
 
 @end

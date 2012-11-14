@@ -9,8 +9,12 @@
 #import "BetrayalAppDelegate.h"
 
 #import "BetrayalMainViewController.h"
+#import "BetrayaliPadMainViewController.h"
 
 #import "Character.h"
+
+#import <MessageUI/MessageUI.h>
+#import <MessageUI/MFMailComposeViewController.h>
 
 @interface BetrayalAppDelegate( Private )
 -( void )readCharacters;
@@ -20,11 +24,13 @@
 
 @synthesize window = _window;
 @synthesize mainViewController = _mainViewController;
+@synthesize iPadMainViewController = _iPadMainViewController;
 
 - (void)dealloc
 {
     [_window release];
     [_mainViewController release];
+    [_iPadMainViewController release];
 
     [ _characters release ];
     _characters = nil;
@@ -38,10 +44,11 @@
     // Override point for customization after application launch.
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
         self.mainViewController = [[[BetrayalMainViewController alloc] initWithNibName:@"BetrayalMainViewController_iPhone" bundle:nil] autorelease];
+        self.window.rootViewController = self.mainViewController;
     } else {
-        self.mainViewController = [[[BetrayalMainViewController alloc] initWithNibName:@"BetrayalMainViewController_iPad" bundle:nil] autorelease];
+        self.iPadMainViewController = [[[BetrayaliPadMainViewController alloc] initWithNibName:@"BetrayalMainViewController_iPad" bundle:nil] autorelease];
+        self.window.rootViewController = self.iPadMainViewController;
     }
-    self.window.rootViewController = self.mainViewController;
     
     [ self readCharacters ];
     
@@ -132,4 +139,13 @@
     return _characters;
 }
 
+#include "Settings.h"
+
++( MFMailComposeViewController* )createFeedbackController
+{
+    MFMailComposeViewController* picker = [ [ [ MFMailComposeViewController alloc ] init ] autorelease ];
+    [ picker setToRecipients:[ NSArray arrayWithObject:FEEDBACK_EMAIL ] ];
+    [ picker setSubject:FEEDBACK_SUBJECT ];
+    return picker;
+}
 @end

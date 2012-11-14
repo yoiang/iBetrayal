@@ -109,13 +109,10 @@
     {
         if ( [ touch view ] == _adorkableLabel )
         {
-            MFMailComposeViewController *picker = [ [ MFMailComposeViewController alloc ] init];
-            picker.mailComposeDelegate = self;
-            [ picker setToRecipients:[ NSArray arrayWithObject:FEEDBACK_EMAIL ] ];
-            [ picker setSubject:FEEDBACK_SUBJECT ];
+            MFMailComposeViewController *picker = [ BetrayalAppDelegate createFeedbackController ];
             
-            [self presentModalViewController:picker animated:YES];
-            [picker release];
+            picker.mailComposeDelegate = self;
+            [ self presentModalViewController:picker animated:YES ];
             break;
         }
     }

@@ -24,6 +24,8 @@
     IBOutlet UIStatTrackerViewController* might;
     IBOutlet UIStatTrackerViewController* sanity;
     IBOutlet UIStatTrackerViewController* knowledge;
+    
+    BetrayalFlipsideViewController* flippedController;
 }
 
 @property (strong, nonatomic) UIPopoverController* flipsidePopoverController;
