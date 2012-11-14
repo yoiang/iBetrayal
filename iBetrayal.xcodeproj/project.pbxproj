@@ -35,7 +35,12 @@
 		3C89EBF514C420CD003CC459 /* BrandonJaspers.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C89EBF214C420CD003CC459 /* BrandonJaspers.png */; };
 		3C89EBF614C420CD003CC459 /* Skull.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C89EBF314C420CD003CC459 /* Skull.png */; };
 		3C89EBFA14C423A1003CC459 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C89EBF914C423A1003CC459 /* MessageUI.framework */; };
+		3C9E0D0616536B07000E2E72 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C9E0D0416536B07000E2E72 /* Icon.png */; };
+		3C9E0D0716536B07000E2E72 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C9E0D0516536B07000E2E72 /* Icon@2x.png */; };
 		3CCC3D8314C42AE700CD122D /* UnknownCharacter.png in Resources */ = {isa = PBXBuildFile; fileRef = 3CCC3D8214C42AE700CD122D /* UnknownCharacter.png */; };
+		3CF2562416535D8A006BAFFC /* BrandonJaspers@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3CF2562116535D89006BAFFC /* BrandonJaspers@2x.png */; };
+		3CF2562516535D8A006BAFFC /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3CF2562216535D89006BAFFC /* Default-568h@2x.png */; };
+		3CF2562616535D8A006BAFFC /* Skull@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3CF2562316535D8A006BAFFC /* Skull@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,7 +94,12 @@
 		3C89EBF314C420CD003CC459 /* Skull.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Skull.png; sourceTree = "<group>"; };
 		3C89EBF814C4220F003CC459 /* Settings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Settings.h; sourceTree = "<group>"; };
 		3C89EBF914C423A1003CC459 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		3C9E0D0416536B07000E2E72 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		3C9E0D0516536B07000E2E72 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		3CCC3D8214C42AE700CD122D /* UnknownCharacter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UnknownCharacter.png; sourceTree = "<group>"; };
+		3CF2562116535D89006BAFFC /* BrandonJaspers@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BrandonJaspers@2x.png"; sourceTree = "<group>"; };
+		3CF2562216535D89006BAFFC /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		3CF2562316535D8A006BAFFC /* Skull@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Skull@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,14 +217,19 @@
 		3C5B4C2114C3B0E90006624D /* assets */ = {
 			isa = PBXGroup;
 			children = (
+				3C9E0D0416536B07000E2E72 /* Icon.png */,
+				3C9E0D0516536B07000E2E72 /* Icon@2x.png */,
 				3CCC3D8214C42AE700CD122D /* UnknownCharacter.png */,
 				3C89EBF114C420CD003CC459 /* BarBackground.png */,
 				3C89EBF214C420CD003CC459 /* BrandonJaspers.png */,
+				3CF2562116535D89006BAFFC /* BrandonJaspers@2x.png */,
 				3C89EBF314C420CD003CC459 /* Skull.png */,
+				3CF2562316535D8A006BAFFC /* Skull@2x.png */,
 				3C48D33714C38A1600E5358C /* Default-Landscape~ipad.png */,
 				3C48D33514C38A1200E5358C /* Default-Portrait~ipad.png */,
-				3C48D33314C389E500E5358C /* Default@2x.png */,
 				3C48D33114C389DE00E5358C /* Default.png */,
+				3C48D33314C389E500E5358C /* Default@2x.png */,
+				3CF2562216535D89006BAFFC /* Default-568h@2x.png */,
 				3C5B4C2214C3B0E90006624D /* Characters.plist */,
 			);
 			path = assets;
@@ -303,6 +318,11 @@
 				3C89EBF514C420CD003CC459 /* BrandonJaspers.png in Resources */,
 				3C89EBF614C420CD003CC459 /* Skull.png in Resources */,
 				3CCC3D8314C42AE700CD122D /* UnknownCharacter.png in Resources */,
+				3CF2562416535D8A006BAFFC /* BrandonJaspers@2x.png in Resources */,
+				3CF2562516535D8A006BAFFC /* Default-568h@2x.png in Resources */,
+				3CF2562616535D8A006BAFFC /* Skull@2x.png in Resources */,
+				3C9E0D0616536B07000E2E72 /* Icon.png in Resources */,
+				3C9E0D0716536B07000E2E72 /* Icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
